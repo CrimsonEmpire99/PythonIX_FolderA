@@ -3,7 +3,7 @@ B = float(input('Enter B = '))
 C = float(input('Enter C = '))
 import math
 S = (A+B+C)/2
-if (A+B < C or B+C < A or C+A < B): print("ABC is not a triangle")
+if (A+B <= C or B+C <= A or C+A <= B): print("ABC is not a triangle")
 else:
   area = math.sqrt(S*(S-A)*(S-B)*(S-C))
   H = (2*area)/B
